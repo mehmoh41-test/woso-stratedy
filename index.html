@@ -33,6 +33,14 @@ https://www.tooplate.com/view/2130-waso-strategy
 Free Bootstrap 5 HTML Template
 
 -->
+<style>
+  /* Wait for Calendly badge to load and override its position */
+  .calendly-badge-widget {
+    left: 20px !important;
+    right: auto !important;
+  }
+</style>
+
 
     </head>
     
@@ -545,11 +553,44 @@ Free Bootstrap 5 HTML Template
                 </div>
             </div>
         </footer>
-
+<style>
+  df-messenger {
+   --df-messenger-bot-message: #878fac;
+   --df-messenger-button-titlebar-color: #4caf50;
+   --df-messenger-chat-background-color: #f9c10b;
+   --df-messenger-font-color: white;
+   --df-messenger-send-icon: #878fac;
+   --df-messenger-user-message: #479b3d;
+  position: fixed !important;
+    bottom: 16px;
+    left: 16px;
+    right: auto !important;
+    z-index: 9999;
+  }
+</style>
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  chat-icon="https:&#x2F;&#x2F;img.freepik.com&#x2F;premium-vector&#x2F;w-logo-design-template-creative-w-icon-initials-based-letters-vector_487414-2792.jpg"
+  intent="WELCOME"
+  chat-title="woso-strategy"
+  agent-id="ab67f435-cac3-452d-8cd8-bb50f987793a"
+  language-code="en"
+></df-messenger>
 <!-- Calendly badge widget begin -->
 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/woso-strategy/30min', text: '1v1 meeting with me', color: '#f9c10b', textColor: '#ffffff', branding: true }); }</script>
+<script type="text/javascript">
+  window.onload = function () {
+    Calendly.initBadgeWidget({
+      url: 'https://calendly.com/woso-strategy/30min',
+      text: '1v1 meeting with me',
+      color: '#f9c10b',
+      textColor: '#ffffff',
+      branding: true,
+    });
+  };
+</script>
+
 <!-- Calendly badge widget end -->
         <!-- JAVASCRIPT FILES -->
         <script src="js/jquery.min.js"></script>
